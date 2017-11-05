@@ -46,9 +46,13 @@ Copy the next files
 
 `cp conf/local.sample.conf conf/local.test.conf`
  
- `cp conf/local.logback.sample.xml conf/local.logback.xml`
+`cp conf/local.logback.sample.xml conf/local.logback.xml`
  
- `cp conf/play-authenticate/mine.conf.sample conf/play-authenticate/mine.local.conf`
+`cp conf/play-authenticate/mine.conf.sample conf/play-authenticate/mine.local.conf`
+
+`cp conf/play-authenticate/smtp.conf.sample conf/play-authenticate/smtp.local.conf`
+
+Change email address on the next files
 
 
 
