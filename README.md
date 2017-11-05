@@ -24,30 +24,59 @@ Now we install PostgreSQL
 
 `sudo apt-get install postgresql postgresql-contrib`
 
-Login into postgres 
+We have to modify the file `pg_hba.conf` to support password login
 
-`sudo -i -u postgres`
-
-We modify the file `pg_hba.conf` to support password login
-
-> The directory can vary depending on psql version installed
+> The directory will differ depending on psql version installed
 
 
 `vim /etc/postgresql/9.5/main/pg_hba.conf`
 
-Replace 
+Search for the line with, and change 
 
 `local   all             all                                     peer`
 
-With
+To
 
-`ocal   all             all                                     md5`
+`local   all             all                                     md5`
 
 Then restart psql server
 
 `sudo service postgresql restart`
 
+Copy the sql script into postgres home directory
 
+`cp conf/sql/database-create-postgres.sql /var/lib/postgresql/`
+
+Login into postgres 
+
+`sudo -i -u postgres`
+
+Login psql console
+
+`psql`
+
+Create the database with default name
+
+`create database appcivistcore;`
+
+Create password for database user `postgres`
+
+`\password`
+
+Exit psql console
+
+`\q`
+
+Run the sql script into appcivistcore database
+
+
+`psql -d appcivistcore -f database-create-postgres.sql`
+
+
+
+
+
+## Sin terminar
 
 Make sure you are on the home directory of your user.
 
