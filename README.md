@@ -15,10 +15,18 @@ The AppCivist Core Platform provides a RESTful API implemented with the full-sta
 
 `sudo apt-get install default-jdk`
 
-> Next step is optional but recommended.
+> Optional but recommended, install build-essential.
 
 
 `sudo apt-get install build-essential`
+
+> Optional but recommended, install node.js V6.
+
+
+`curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
+
+`sudo apt-get install -y nodejs`
+
 
 Now we install PostgreSQL
 
@@ -128,7 +136,11 @@ Change email address on the next files
 smtp.local
 
 
+Run the server typing
 
+`./activator`
+
+`run -Dconfig.resource=local.conf -Dlogger.file=conf/local.logback.xml`
 
 
 
