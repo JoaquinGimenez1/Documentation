@@ -1,4 +1,4 @@
-# How To Instal and Configure AppCivist Platform on Ubuntu 16.04
+# How To Install and Configure AppCivist Platform on Ubuntu 16.04
 
 ## Introduction
 This guide explains step by step how to download and install the AppCivist Core Platform and the AppCivist database on a Ubuntu 16.04 server.
