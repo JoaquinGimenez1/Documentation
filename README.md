@@ -24,6 +24,10 @@ Now we install PostgreSQL
 
 `sudo apt-get install postgresql postgresql-contrib`
 
+`systemctl start postgresql`
+
+`systemctl enable postgresql`
+
 We have to modify the file `pg_hba.conf` to support password login
 
 > The directory will differ depending on psql version installed
@@ -42,6 +46,16 @@ To
 Then restart psql server
 
 `sudo service postgresql restart`
+
+Make sure you are on the home directory of your user.
+
+`cd`
+
+Now we can clone the repository
+
+`git clone https://github.com/socialappslab/appcivist-platform.git`
+
+`cd appcivist-platform/`
 
 Copy the sql script into postgres home directory
 
@@ -72,25 +86,20 @@ Run the sql script into appcivistcore database
 
 `psql -d appcivistcore -f database-create-postgres.sql`
 
+Logout from postgres
 
-
-
-
-## Sin terminar
-
-Make sure you are on the home directory of your user.
-
-`cd`
-
-Now we can clone the repository
-
-`git clone https://github.com/socialappslab/appcivist-platform.git`
-`cd appcivist-platform/`
+`logout`
 
 Install Activator from compiled source code
 
 > Next step may take a long time to complete. this process can take a long time dependig on your internet speed, this will install all dependecies required by Play-Framework
 
+
+Make sure you are on the home directory of your user.
+
+`cd`
+
+`cd appcivist-platform/`
 
 `sudo ./activator`
 
