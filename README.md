@@ -41,6 +41,7 @@ Once finished type
 `exit`
 
 Copy the next files 
+
 `cp conf/local.sample.conf conf/local.conf`
 
 `cp conf/local.sample.conf conf/local.test.conf`
