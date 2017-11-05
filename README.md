@@ -6,6 +6,6 @@ The AppCivist Core Platform provides a RESTful API implemented with the full-sta
 
 ## Installation
 
-`sudo apt-get update` 
-`sudo apt-get -y upgrade`
-`sudo apt -y full-upgrade`
+`sudo apt-get update` <br />
+`sudo apt-get -y upgrade` <br />
+`sudo apt -y full-upgrade` <br />
