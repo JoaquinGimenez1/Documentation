@@ -12,4 +12,5 @@ The AppCivist Core Platform provides a RESTful API implemented with the full-sta
 
 `sudo apt-get install default-jdk` <br />
 > Optional but recommend. <br />
+
 `sudo apt-get install build-essential` <br />
