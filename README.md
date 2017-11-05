@@ -28,3 +28,15 @@ Now we can clone the repository
 
 `git clone https://github.com/socialappslab/appcivist-platform.git`
 `cd appcivist-platform/`
+
+Install Activator from compiled source code
+
+> Next step may take a long time to complete. this process can take a long time dependig on your internet speed, this will install all dependecies required by Play-Framework
+
+
+`sudo ./activator`
+
+
+
+
+
