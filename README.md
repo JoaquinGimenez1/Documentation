@@ -20,6 +20,35 @@ The AppCivist Core Platform provides a RESTful API implemented with the full-sta
 
 `sudo apt-get install build-essential`
 
+Now we install PostgreSQL
+
+`sudo apt-get install postgresql postgresql-contrib`
+
+Login into postgres 
+
+`sudo -i -u postgres`
+
+We modify the file `pg_hba.conf` to support password login
+
+> The directory can vary depending on psql version installed
+
+
+`vim /etc/postgresql/9.5/main/pg_hba.conf`
+
+Replace 
+
+`local   all             all                                     peer`
+
+With
+
+`ocal   all             all                                     md5`
+
+Then restart psql server
+
+`sudo service postgresql restart`
+
+
+
 Make sure you are on the home directory of your user.
 
 `cd`
@@ -36,7 +65,11 @@ Install Activator from compiled source code
 
 `sudo ./activator`
 
-Once finished type 
+Once finished you will see
+
+`[appcivist-core] $ `
+
+Then type 
 
 `exit`
 
@@ -53,6 +86,12 @@ Copy the next files
 `cp conf/play-authenticate/smtp.conf.sample conf/play-authenticate/smtp.local.conf`
 
 Change email address on the next files
+
+smtp.local
+
+
+
+
 
 
 
