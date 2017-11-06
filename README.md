@@ -45,7 +45,7 @@ systemctl start postgresql
 systemctl enable postgresql
 ```
 
-We have to modify the file `pg_hba.conf` to support password login
+We have to modify the file **pg_hba.conf** to support password login
 
 > The directory **will differ** depending on **psql version** installed
 
@@ -104,7 +104,7 @@ Create the database with default name
 create database appcivistcore;
 ```
 
-Create password for database user `postgres`
+Create password for database user **postgres**
 
 ```
 \password
