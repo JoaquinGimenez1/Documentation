@@ -135,7 +135,7 @@ Copy the next files
 
 ### Configuring setup files of the platform
 
-Main configuration of the project.
+Main configuration file of the project.
 
 `vim conf/local.conf`
 
@@ -168,7 +168,23 @@ application {
     baseUrl="http://www.example.com:9000/"
 ```
 
+> Falta recaptcha, aws s3 etc etc
 
+
+Save all the changes on `local.conf` and we open `mine.local.conf`
+
+`vim conf/play-authenticate/mine.local.conf`
+
+We need to get Google and Facebook credentials to use their services.
+
+*Google credentials
+... Get them here: https://code.google.com/apis/consol
+*Facebook credentials
+... Get them here: https://developers.facebook.com/apps
+```
+clientId=""
+clientSecret=""
+```
 
 ## Running the server
 
