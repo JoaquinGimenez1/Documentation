@@ -177,14 +177,20 @@ Save all the changes on `local.conf` and we open `mine.local.conf`
 
 We need to get Google and Facebook credentials to use their services.
 
-* Google credentials
-..* Get them here: https://code.google.com/apis/consol
-* Facebook credentials
-..* Get them here: https://developers.facebook.com/apps
+* Google credentials: get them here https://code.google.com/apis/consol
+* Facebook credentials: get them here https://developers.facebook.com/apps
+
+Then we add those credentials in the file
 ```
 clientId=""
 clientSecret=""
 ```
+
+Search for `email="youremail@example.com"` and change it with your own
+
+Save the changes and exit
+
+
 
 ## Running the server
 
