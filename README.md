@@ -219,6 +219,20 @@ invitations {
 
 Replace the configuration values that start with `"${?*"` with required credentials for IMGUR, Amazon S3 and MapBox API.
 
+We need to get Google credentials to use reCaptcha service.
+
+* ReCaptcha credentials: get them here https://www.google.com/recaptcha/
+
+Add credentials in the file
+
+```
+recaptcha {
+           secret = "secret code for recaptcha service"
+           serverURL = "https://www.google.com/recaptcha/api/siteverify"
+        }
+```
+
+
 **Save all the changes** on local.conf and exit.
 
 Open **mine.local.conf**
