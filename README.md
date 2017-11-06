@@ -242,7 +242,7 @@ clientSecret=""
 
 **Save the changes and exit**
 
-Open `smtp.local.conf`
+Open **smtp.local.conf**
 
 ```
 vim conf/play-authenticate/smtp.local.conf
@@ -257,11 +257,6 @@ Search for
 `email="you@gmail.com"` and replace it with your own.
 
 `name="Your Name"` and replace it with your own.
-
-
-
-
-
 
 
 ## Running the server
