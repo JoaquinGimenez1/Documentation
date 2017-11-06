@@ -34,11 +34,11 @@ Install Java Developer Kit
 
 Now we install PostgreSQL
 
-```sudo apt-get install postgresql postgresql-contrib
-
+```
+sudo apt-get install postgresql postgresql-contrib
 systemctl start postgresql
-
-systemctl enable postgresql```
+systemctl enable postgresql
+```
 
 We have to modify the file `pg_hba.conf` to support password login
 
