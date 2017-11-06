@@ -177,10 +177,10 @@ Save all the changes on `local.conf` and we open `mine.local.conf`
 
 We need to get Google and Facebook credentials to use their services.
 
-*Google credentials
-... Get them here: https://code.google.com/apis/consol
-*Facebook credentials
-... Get them here: https://developers.facebook.com/apps
+* Google credentials
+..* Get them here: https://code.google.com/apis/consol
+* Facebook credentials
+..* Get them here: https://developers.facebook.com/apps
 ```
 clientId=""
 clientSecret=""
