@@ -29,7 +29,7 @@ Using NPM, install Bower package manager
 npm install -g bower
 ```
 Install Grunt
-````
+```
 npm install -g grunt
 ```
 Install the CSS authoring framework Compass (you will need Ruby first)
