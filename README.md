@@ -13,12 +13,12 @@ The AppCivist Core Platform provides a RESTful API implemented with the full-sta
 
 `sudo apt -y full-upgrade`
 
-`sudo apt-get install default-jdk`
+`sudo apt-get install -y default-jdk`
 
 > Optional but recommended, will install build-essential.
 
 
-`sudo apt-get install build-essential`
+`sudo apt-get install -y build-essential`
 
 > Optional but recommended, will install node.js V6.
 
