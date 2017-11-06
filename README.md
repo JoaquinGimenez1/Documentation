@@ -40,7 +40,7 @@ sudo apt-get install -y nodejs
 Now we install PostgreSQL
 
 ```
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install -y postgresql postgresql-contrib
 systemctl start postgresql
 systemctl enable postgresql
 ```
