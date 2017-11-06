@@ -9,11 +9,11 @@ The AppCivist Core Platform provides a RESTful API implemented with the full-sta
 
 First we update all the system.
 
-`sudo apt-get update`
-
-`sudo apt-get -y upgrade`
-
-`sudo apt -y full-upgrade`
+```
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt -y full-upgrade
+```
 
 Install Java Developer Kit
 
@@ -27,9 +27,10 @@ Install Java Developer Kit
 > Optional but recommended, next step will install node.js V6.
 
 
-`curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
-
-`sudo apt-get install -y nodejs`
+```
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
 
 
 Now we install PostgreSQL
@@ -65,9 +66,10 @@ Make sure you are on the home directory of your user.
 
 Now we can clone the repository
 
-```git clone https://github.com/socialappslab/appcivist-platform.git
-
-cd appcivist-platform/```
+```
+git clone https://github.com/socialappslab/appcivist-platform.git
+cd appcivist-platform/
+```
 
 Copy the sql script into postgres home directory
 
@@ -109,11 +111,11 @@ Install Activator from compiled source code
 
 Make sure you are on the home directory of your user.
 
-```cd
-
+```
+cd
 cd appcivist-platform/
-
-sudo ./activator```
+sudo ./activator
+```
 
 Once finished you will see
 
@@ -125,11 +127,13 @@ Then type
 
 Now we have installed TypeSafe Activator and Play-Framework dependencies, so we need to copy the next files 
 
-```cp conf/local.sample.conf conf/local.conf
+```
+cp conf/local.sample.conf conf/local.conf
 cp conf/local.sample.conf conf/local.test.conf
 cp conf/local.logback.sample.xml conf/local.logback.xml
 cp conf/play-authenticate/mine.conf.sample conf/play-authenticate/mine.local.conf
-cp conf/play-authenticate/smtp.conf.sample conf/play-authenticate/smtp.local.conf```
+cp conf/play-authenticate/smtp.conf.sample conf/play-authenticate/smtp.local.conf
+```
 
 ### Configuring setup files
 
@@ -229,14 +233,12 @@ Search for
 
 Run the server using the following commands
 
-`cd`
-
-`cd appcivist-platform/`
-
-`./activator`
-
-`run -Dconfig.resource=local.conf -Dlogger.file=conf/local.logback.xml`
-
+```
+cd
+cd appcivist-platform/
+./activator
+run -Dconfig.resource=local.conf -Dlogger.file=conf/local.logback.xml
+```
 On your browser, go to 
 
 http://localhost:9000/api/doc 
