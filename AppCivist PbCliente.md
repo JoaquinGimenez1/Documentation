@@ -41,6 +41,7 @@ npm install -g grunt
 
 
 Install the CSS authoring framework Compass (you will need Ruby first)
+
 ```
 sudo apt-get install -y ruby ruby-dev ruby-haml
 gem update --system
@@ -48,6 +49,7 @@ gem install compass
 ```
 
 Install the Sass language
+
 ```
 gem install sass
 ```
@@ -59,6 +61,7 @@ git clone https://github.com/socialappslab/appcivist-pb-client.git
 ```
 
 You need to download the dependencies before run the application 
+
 ```
 cd appcivist-pb-client/
 npm install
