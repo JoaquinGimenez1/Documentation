@@ -170,8 +170,7 @@ application {
     baseUrl="http://www.example.com:9000/"
 ```
 
-> Falta recaptcha, aws s3 etc etc
-
+Replace the configuration values that start with "${?*" with required credentials for IMGUR, Amazon S3 and MapBox API.
 
 **Save all the changes** on `local.conf` and exit.
 
