@@ -109,11 +109,11 @@ Install Activator from compiled source code
 
 Make sure you are on the home directory of your user.
 
-`cd`
+```cd
 
-`cd appcivist-platform/`
+cd appcivist-platform/
 
-`sudo ./activator`
+sudo ./activator```
 
 Once finished you will see
 
@@ -137,12 +137,13 @@ Now we have installed TypeSafe Activator and Play-Framework dependencies, so we 
 
 ### Configuring setup files
 
-Main configuration file of the project `local.conf`.
+Main configuration file of the project **local.conf**.
 
 `vim conf/local.conf`
 
 Make sure that **Evolutions are disabled**
 ```
+...
 evolutions {
         enabled=false
         db {
@@ -151,10 +152,12 @@ evolutions {
             }
         }
     }
+...
 ```
 Make sure that the database is configured like this, we use the default PostgreSQL user and the password we configure before
 
 ```
+...
 db {
     default {
         driver=org.postgresql.Driver
@@ -163,18 +166,31 @@ db {
         password="postgres"
     }
 }
+...
 ```
-In `application.baseUrl` we can setup our domain name or `localhost`
+
+In **application.baseUrl** we can setup our domain name or `localhost`
 ```
+...
 application {
     baseUrl="http://www.example.com:9000/"
+...
 ```
 
-Replace the configuration values that start with "${?*" with required credentials for IMGUR, Amazon S3 and MapBox API.
+Change **appcivist.invitations.baseUrl** to point to the base URL of the frontend prototype to use.
+```
+...
+invitations {
+        baseUrl = "http://www.example.com/"
+    }
+...
+```
 
-**Save all the changes** on `local.conf` and exit.
+Replace the configuration values that start with `"${?*"` with required credentials for IMGUR, Amazon S3 and MapBox API.
 
-Open `mine.local.conf`
+**Save all the changes** on local.conf and exit.
+
+Open **mine.local.conf**
 
 `vim conf/play-authenticate/mine.local.conf`
 
