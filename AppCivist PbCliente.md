@@ -69,6 +69,4 @@ npm install
 
 Now you can run the app typing
 
-```
-grunt server
-```
+`grunt server
