@@ -13,9 +13,11 @@ The AppCivist Core Platform provides a RESTful API implemented with the full-sta
 
 `sudo apt -y full-upgrade`
 
+Install Java Developer Kit
+
 `sudo apt-get install -y default-jdk`
 
-> Optional but recommended, will install build-essential.
+> Optional but recommended, will install essentials tools for developers.
 
 
 `sudo apt-get install -y build-essential`
@@ -131,13 +133,33 @@ Copy the next files
 
 `cp conf/play-authenticate/smtp.conf.sample conf/play-authenticate/smtp.local.conf`
 
-Change email address on the next files
+### Configuring setup files of the platform
 
-smtp.local
+Main configuration of the project.
+
+`vim conf/local.conf`
+
+Make sure that **Evolutions are disabled**
+`
+evolutions {
+        enabled=false
+        db {
+            default {
+                autoApply=false
+            }
+        }
+    }
+`
 
 
+
+## Running the server
 
 Run the server using the following commands
+
+`cd`
+
+`cd appcivist-platform/`
 
 `./activator`
 
@@ -148,8 +170,3 @@ On your browser, go to
 http://localhost:9000/api/doc 
 
 To visit the documentation of the API endpoints and have try them out with real examples.
-
-
-
-
-
