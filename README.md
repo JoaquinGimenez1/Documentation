@@ -140,7 +140,7 @@ Main configuration of the project.
 `vim conf/local.conf`
 
 Make sure that **Evolutions are disabled**
-`
+```
 evolutions {
         enabled=false
         db {
