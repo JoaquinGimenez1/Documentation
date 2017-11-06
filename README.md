@@ -135,7 +135,7 @@ Now we have installed TypeSafe Activator and Play-Framework dependencies, so we 
 
 `cp conf/play-authenticate/smtp.conf.sample conf/play-authenticate/smtp.local.conf`
 
-### Configuring setup files of the platform
+### Configuring setup files
 
 Main configuration file of the project `local.conf`.
 
