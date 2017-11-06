@@ -7,6 +7,8 @@ The AppCivist Core Platform provides a RESTful API implemented with the full-sta
 
 ## Installation
 
+First we update all the system.
+
 `sudo apt-get update`
 
 `sudo apt-get -y upgrade`
@@ -17,12 +19,12 @@ Install Java Developer Kit
 
 `sudo apt-get install -y default-jdk`
 
-> Optional but recommended, will install essentials tools for developers.
+> Optional but recommended, next step will install essentials tools for developers.
 
 
 `sudo apt-get install -y build-essential`
 
-> Optional but recommended, will install node.js V6.
+> Optional but recommended, next step will install node.js V6.
 
 
 `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
@@ -40,7 +42,7 @@ Now we install PostgreSQL
 
 We have to modify the file `pg_hba.conf` to support password login
 
-> The directory will differ depending on psql version installed
+> The directory **will differ** depending on **psql version** installed
 
 
 `vim /etc/postgresql/9.5/main/pg_hba.conf`
@@ -102,7 +104,7 @@ Logout from postgres
 
 Install Activator from compiled source code
 
-> Next step may take a long time to complete. This will install all dependecies required by Play-Framework
+> Next steps may take a long time to complete. This will install all dependecies required by Play-Framework
 
 
 Make sure you are on the home directory of your user.
@@ -121,7 +123,7 @@ Then type
 
 `exit`
 
-Copy the next files 
+Now we have installed TypeSafe Activator and Play-Framework dependencies, so we need to copy the next files 
 
 `cp conf/local.sample.conf conf/local.conf`
 
@@ -135,7 +137,7 @@ Copy the next files
 
 ### Configuring setup files of the platform
 
-Main configuration file of the project.
+Main configuration file of the project `local.conf`.
 
 `vim conf/local.conf`
 
@@ -171,7 +173,9 @@ application {
 > Falta recaptcha, aws s3 etc etc
 
 
-Save all the changes on `local.conf` and we open `mine.local.conf`
+**Save all the changes** on `local.conf` and exit.
+
+Open `mine.local.conf`
 
 `vim conf/play-authenticate/mine.local.conf`
 
@@ -188,7 +192,12 @@ clientSecret=""
 
 Search for `email="youremail@example.com"` and change it with your own
 
-Save the changes and exit
+**Save the changes and exit**
+
+
+
+
+
 
 
 
