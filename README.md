@@ -283,6 +283,6 @@ run -Dconfig.resource=local.conf -Dlogger.file=conf/local.logback.xml
 ```
 On your browser, go to 
 
-http://localhost:9000/api/doc 
+http://www.example.com:9000/api/doc 
 
 To visit the documentation of the API endpoints and have try them out with real examples.
