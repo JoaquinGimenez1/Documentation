@@ -1,7 +1,7 @@
 # How To Install and Configure AppCivist Platform on Ubuntu 16.04
 
 ## Introduction
-This guide explains step by step how to download and install the AppCivist Core Platform and the AppCivist database on a Ubuntu 16.04 server.
+This guide explains step by step how to download and install a production isntance with AppCivist Core Platform and the AppCivist database on a Ubuntu 16.04 server.
 
 The AppCivist Core Platform provides a RESTful API implemented with the full-stack Playframework. Follow these instructions to download the source code and run it.
 
@@ -149,7 +149,24 @@ evolutions {
             }
         }
     }
-`
+```
+Make sure that the database is configured like this, we use the default PostgreSQL user and the password we configure before
+
+```
+db {
+    default {
+        driver=org.postgresql.Driver
+        url="jdbc:postgresql://localhost:5432/appcivistcore"
+        username="postgres"
+        password="postgres"
+    }
+}
+```
+In `application.baseUrl` we can setup our domain name or `localhost`
+```
+application {
+    baseUrl="http://www.example.com:9000/"
+```
 
 
 
