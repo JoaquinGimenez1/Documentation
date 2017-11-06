@@ -136,11 +136,18 @@ Change email address on the next files
 smtp.local
 
 
-Run the server typing
+
+Run the server using the following commands
 
 `./activator`
 
 `run -Dconfig.resource=local.conf -Dlogger.file=conf/local.logback.xml`
+
+On your browser, go to 
+
+[link text itself]: http://localhost:9000/api/doc 
+
+To visit the documentation of the API endpoints and have try them out with real examples.
 
 
 
