@@ -179,9 +179,11 @@ Open `mine.local.conf`
 
 `vim conf/play-authenticate/mine.local.conf`
 
+Search for `email="youremail@example.com"` and change it with your own
+
 We need to get Google and Facebook credentials to use their services.
 
-* Google credentials: get them here https://code.google.com/apis/consol
+* Google credentials: get them here https://code.google.com/apis/console
 * Facebook credentials: get them here https://developers.facebook.com/apps
 
 Then we add those credentials in the file
@@ -190,10 +192,21 @@ clientId=""
 clientSecret=""
 ```
 
-Search for `email="youremail@example.com"` and change it with your own
-
 **Save the changes and exit**
 
+Open `smtp.local.conf`
+
+`vim conf/play-authenticate/smtp.local.conf` 
+
+Search for
+
+`user="youremail@gmail.com"` and replace it with your own.
+
+`password="yourpassword@gmail.com"` and replace it with your own.
+
+`email="you@gmail.com"` and replace it with your own.
+
+`name="Your Name"` and replace it with your own.
 
 
 
