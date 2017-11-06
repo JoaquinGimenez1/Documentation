@@ -34,11 +34,11 @@ Install Java Developer Kit
 
 Now we install PostgreSQL
 
-`sudo apt-get install postgresql postgresql-contrib`
+```sudo apt-get install postgresql postgresql-contrib
 
-`systemctl start postgresql`
+systemctl start postgresql
 
-`systemctl enable postgresql`
+systemctl enable postgresql```
 
 We have to modify the file `pg_hba.conf` to support password login
 
@@ -65,9 +65,9 @@ Make sure you are on the home directory of your user.
 
 Now we can clone the repository
 
-`git clone https://github.com/socialappslab/appcivist-platform.git`
+```git clone https://github.com/socialappslab/appcivist-platform.git
 
-`cd appcivist-platform/`
+cd appcivist-platform/```
 
 Copy the sql script into postgres home directory
 
@@ -125,15 +125,11 @@ Then type
 
 Now we have installed TypeSafe Activator and Play-Framework dependencies, so we need to copy the next files 
 
-`cp conf/local.sample.conf conf/local.conf`
-
-`cp conf/local.sample.conf conf/local.test.conf`
- 
-`cp conf/local.logback.sample.xml conf/local.logback.xml`
- 
-`cp conf/play-authenticate/mine.conf.sample conf/play-authenticate/mine.local.conf`
-
-`cp conf/play-authenticate/smtp.conf.sample conf/play-authenticate/smtp.local.conf`
+```cp conf/local.sample.conf conf/local.conf
+cp conf/local.sample.conf conf/local.test.conf
+cp conf/local.logback.sample.xml conf/local.logback.xml
+cp conf/play-authenticate/mine.conf.sample conf/play-authenticate/mine.local.conf
+cp conf/play-authenticate/smtp.conf.sample conf/play-authenticate/smtp.local.conf```
 
 ### Configuring setup files
 
