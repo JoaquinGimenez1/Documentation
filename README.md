@@ -17,7 +17,9 @@ sudo apt -y full-upgrade
 
 Install Java Developer Kit
 
-`sudo apt-get install -y default-jdk`
+```
+sudo apt-get install -y default-jdk
+`
 
 > Optional but recommended, next step will install essentials tools for developers.
 
