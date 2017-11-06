@@ -136,8 +136,6 @@ Install Activator from compiled source code
 Make sure you are on the home directory of your user.
 
 ```
-cd
-cd appcivist-platform/
 sudo ./activator
 ```
 
