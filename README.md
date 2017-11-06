@@ -145,7 +145,7 @@ Run the server using the following commands
 
 On your browser, go to 
 
-[link text itself]: http://localhost:9000/api/doc 
+http://localhost:9000/api/doc 
 
 To visit the documentation of the API endpoints and have try them out with real examples.
 
