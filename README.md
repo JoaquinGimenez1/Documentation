@@ -171,7 +171,7 @@ Main configuration file of the project **local.conf**.
 vim conf/local.conf
 ```
 
-Make sure that **Evolutions are disabled**
+Make sure that **Evolutions are disabled** (for production)
 
 ```
 ...
