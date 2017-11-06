@@ -100,7 +100,7 @@ Logout from postgres
 
 Install Activator from compiled source code
 
-> Next step may take a long time to complete. this process can take a long time dependig on your internet speed, this will install all dependecies required by Play-Framework
+> Next step may take a long time to complete. This will install all dependecies required by Play-Framework
 
 
 Make sure you are on the home directory of your user.
