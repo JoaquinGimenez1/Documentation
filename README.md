@@ -24,9 +24,11 @@ sudo apt-get install -y default-jdk
 > Optional but recommended, next step will install essentials tools for developers.
 
 
-`sudo apt-get install -y build-essential`
+```
+sudo apt-get install -y build-essential
+```
 
-> Optional but recommended, next step will install node.js V6.
+> Optional but recommended, next step will install **node.js V6**.
 
 
 ```
@@ -48,63 +50,83 @@ We have to modify the file `pg_hba.conf` to support password login
 > The directory **will differ** depending on **psql version** installed
 
 
-`vim /etc/postgresql/9.5/main/pg_hba.conf`
+```
+vim /etc/postgresql/9.5/main/pg_hba.conf
+```
 
 Search for the line with, and change 
 
-`local   all             all                                     peer`
+```
+local   all             all                                     peer
+```
 
 To
 
-`local   all             all                                     md5`
+```
+local   all             all                                    md5
+```
 
 Then restart psql server
 
-`sudo service postgresql restart`
+```
+sudo service postgresql restart
+```
 
-Make sure you are on the home directory of your user.
-
-`cd`
-
-Now we can clone the repository
+Now we can clone the repository in the home directory
 
 ```
+cd
 git clone https://github.com/socialappslab/appcivist-platform.git
 cd appcivist-platform/
 ```
 
 Copy the sql script into postgres home directory
 
-`cp conf/sql/database-create-postgres.sql /var/lib/postgresql/`
+```
+cp conf/sql/database-create-postgres.sql /var/lib/postgresql/
+```
 
 Login into postgres 
 
-`sudo -i -u postgres`
+```
+sudo -i -u postgres
+```
 
 Login psql console
 
-`psql`
+```
+psql
+```
 
 Create the database with default name
 
-`create database appcivistcore;`
+```
+create database appcivistcore;
+```
 
 Create password for database user `postgres`
 
-`\password`
+```
+\password
+```
 
 Exit psql console
 
-`\q`
+```
+\q
+```
 
 Run the sql script into appcivistcore database
 
-
-`psql -d appcivistcore -f database-create-postgres.sql`
+```
+psql -d appcivistcore -f database-create-postgres.sql
+```
 
 Logout from postgres
 
-`logout`
+```
+logout
+```
 
 Install Activator from compiled source code
 
@@ -121,11 +143,15 @@ sudo ./activator
 
 Once finished you will see
 
-`[appcivist-core] $ `
+```
+[appcivist-core] $ 
+```
 
-Then type 
+Exit TypeSafe Activator console typing: 
 
-`exit`
+```
+exit
+```
 
 Now we have installed TypeSafe Activator and Play-Framework dependencies, so we need to copy the next files 
 
@@ -141,9 +167,12 @@ cp conf/play-authenticate/smtp.conf.sample conf/play-authenticate/smtp.local.con
 
 Main configuration file of the project **local.conf**.
 
-`vim conf/local.conf`
+```
+vim conf/local.conf
+```
 
 Make sure that **Evolutions are disabled**
+
 ```
 ...
 evolutions {
@@ -194,7 +223,9 @@ Replace the configuration values that start with `"${?*"` with required credenti
 
 Open **mine.local.conf**
 
-`vim conf/play-authenticate/mine.local.conf`
+```
+vim conf/play-authenticate/mine.local.conf
+```
 
 Search for `email="youremail@example.com"` and change it with your own
 
@@ -213,7 +244,9 @@ clientSecret=""
 
 Open `smtp.local.conf`
 
-`vim conf/play-authenticate/smtp.local.conf` 
+```
+vim conf/play-authenticate/smtp.local.conf
+``` 
 
 Search for
 
