@@ -58,7 +58,7 @@ Save and exit the file
 The next step is to build the docker image
 
 ```bash
-docker build -t swagger-ui-sorted:lastest --no-cache .
+docker build -t swagger-ui-mod:lastest --no-cache .
 ```
 Check the image just builded typing 
 
@@ -67,14 +67,11 @@ docker ps
 ```
 To test the Docker Image we can type
 ```bash
-docker run -p 9000:8080 swagger:1.2
+docker run -p 9000:8080 swagger-ui-mod
 ```
-
-probar 
-
-docker run -p 9000:8080 swagger:1.2
-
-para que quede como deamon 
-
-docker run -d -p 9000:8080 swagger:1.4
-
+And now check localhost or domain name on port 9000
+For production we need to run Swagger-UI in Daemon mode typing
+```bash
+docker run -d -p 80:8080 swagger:1.4
+```
+The parameter `-p` specifies the port, `host_port:docker_port`, the `host_port` can be whatever you find better, BUT the `docker:port` cannot be changed.
