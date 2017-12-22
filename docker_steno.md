@@ -14,8 +14,24 @@ We need to add some parameters to sort the methods
 ```bash
 vim dist/index.html 
 ```
+Search the following script
 
-
+```html
+// Build a system
+  const ui = SwaggerUIBundle({
+    url: "http://petstore.swagger.io/v2/swagger.json",
+    dom_id: '#swagger-ui',
+    deepLinking: true,
+    presets: [
+      SwaggerUIBundle.presets.apis,
+      SwaggerUIStandalonePreset
+    ],
+    plugins: [
+      SwaggerUIBundle.plugins.DownloadUrl
+    ],
+    layout: "StandaloneLayout"
+  })
+```
 
 ### add las linea para que ordene! 
 
