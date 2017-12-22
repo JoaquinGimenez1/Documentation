@@ -2,12 +2,21 @@
 
 ## 1. Install Docker-CE (Community Edition) 
 
-```
+SET UP THE REPOSITORY
+
+1. Update the `apt` package index:
+```bash
 sudo apt-get update
-sudo apt-get upgrade
 ``` 
-    
-    udo apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
+
+
+
+
+```    
+
+```
+
+udo apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
     5  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
     6  sudo apt-key fingerprint 0EBFCD88
     7  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
